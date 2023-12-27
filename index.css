@@ -1,0 +1,40 @@
+.header {
+ display: flex;
+ justify-content: space-between;
+ border: 1px solid black;
+}
+.logo {
+    width: 100px;
+}
+.nav-items > ul {
+ display: flex;
+ list-style-type: none;
+ padding: 0px 20px;
+ font-size: 24px;
+}
+
+.nav-items > ul > li {
+
+    padding: 10px;
+    margin: 10px;
+}
+.res-card{
+    
+    width: 250px;
+    margin:5px;
+    padding: 1px;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.card-logo{
+    
+    height: 50%;
+    width: 100%;
+}
