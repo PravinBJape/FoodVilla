@@ -33,7 +33,7 @@ const Body  =()=>{
               setsearchtext(e.target.value);
             }}></input>
             <button name="search-btn" onClick={()=>{
-              const filteredlist=listofrestaurant.filter((reslist)=> reslist.info.name.toLowerCase().includes(searchtext.toLowerCase()));
+              const filteredlist=listofrestaurant.filter((reslist)=> reslist.info.name.toLowerCase().includes(searchtext?searchtext.toLowerCase():""));
               setfilteredrestaurant(filteredlist);
 
             }}>Search</button>
