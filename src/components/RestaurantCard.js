@@ -5,7 +5,7 @@ const RestaurantCard=(props)=>{
          <img className="card-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + props.resData.info.cloudinaryImageId}></img>
    
          <h3>{props.resData.info.name}</h3>
-         <h4>{props.resData.info.cuisines.join(",")}</h4>
+         <h4><wrap>{props.resData.info.cuisines.join(",")}</wrap></h4>
          <h4>{props.resData.info.avgRating} Stars</h4>
          <h4>${props.resData.info.costForTwo}</h4>
          <h4>{props.resData.info.sla.deliveryTime} minutes</h4>
