@@ -18,7 +18,7 @@ const Body  =()=>{
     );
 
     const json=await data.json();
-    console.log("use effect");
+    //console.log("use effect");
     setlistofrestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     setfilteredrestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   }
